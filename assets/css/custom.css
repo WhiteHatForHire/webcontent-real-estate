@@ -1,0 +1,103 @@
+/*
+
+Table of contents:
+
+1. Header Styles
+2. 
+
+
+
+
+*/
+
+/*====== UTILITIES =======*/
+
+.margin-bottom-50 {
+    margin-bottom: 50px !important;
+}
+
+.flex-container-vertical {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*====== HEADER STYLES ======*/
+
+.theme-blue-background {
+    background-color: rgba(39,51,63, 0.8) !important;
+}
+.theme-light-gray-background {
+    background-color: rgba(225,225,225, 0.89) !important;
+}
+
+.theme-blue-background-solid {
+    background-color: rgb(39,51,63) !important;
+}
+
+.menu {
+    margin-left: 20px;
+}
+.heading-phone-banner  {
+    text-align-last: right;
+    margin-top: 30px;
+    color: white !important;
+}
+
+/*====== JUMBOTRON =======*/
+
+.jumbo-wrapper {
+    background-size: cover;
+    height: 100vh;
+    /*background-image: url('/wp-content/uploads/2018/07/modern-house1.jpg')*/
+}
+
+/*====== easy-for-you-section ========*/
+
+.easy-for-you-section {
+    margin: 60px auto !important;
+}
+
+/*====== Properties-feature-landing =======*/
+.properties-feature-landing {
+    color: white;
+    margin-top: 50px;    
+    padding: 10px 0px;
+}
+
+.property-slider {
+    margin: 20px 0;
+}
+
+
+.filler-box {
+    width: 95%;
+    height: 140px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filler-box i {
+    font-size: 20px;
+}
+
+/*===== Landing team intro section ======*/
+
+.landing-team-intro {
+    height: 60vh;
+}
+
+.col-inner-wrapper {
+    padding: 20px 10px;
+}
+
+/*Media query for phone number at tablet and smaller*/
+
+@media screen and (max-width: 992px) {
+    .heading-phone-banner {
+        display: none !important;
+    }
+}

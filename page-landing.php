@@ -1,0 +1,120 @@
+<?php
+/**
+ * Template Name: Page Landing
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package wpre
+ */
+
+get_header('landing'); ?>
+<div class="landing-jumbotron">
+
+</div>
+</div>
+
+<?php get_template_part('modules/navigation/primary', 'navigation'); ?>
+</div> <!-- End .jumbo-wrapper -->
+
+<div class="easy-for-you-section container">
+	<div class="easy-for-you-text">
+		<h1>We make it easy for you!</h1>
+		<h3 class="">After ten years working in real estate at other brokerages, I knew that buyers and sellers wanted a better real estate experience.</h3>
+	</div>
+</div>
+
+<h1 class="margin-bottom-50 text-center clearfix">Lancaster Properties</h1>
+
+<!-- featured properties section -->
+<section class="theme-blue-background-solid">
+	<div class="properties-feature-landing container theme-blue-background-solid">
+		<div class="row property-slider">
+			<div class="col-md-2"><h2>Columbia Borough School Dist</h2></div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-1">
+				<div class="filler-box"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div> <!-- end row -->
+
+		<div class="row property-slider">
+			<div class="col-md-2"><h2>Conestoga Valley School Dist</h2></div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-1">
+				<div class="filler-box"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div> <!-- end row -->
+
+		<div class="row property-slider">
+			<div class="col-md-2"><h2>Donegal School Dist</h2></div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-1">
+				<div class="filler-box"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end feature properties section-->
+
+<section class="landing-team-intro flex-container-vertical" data-parallax="scroll"data-bleed="8" data-speed="0.3" data-image-src="/wp-content/uploads/2018/07/office-interior-placeholder.jpg">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-4 theme-light-gray-background">
+				<div class="col-inner-wrapper">
+					<h1>Jeremy Ganse Team</h1>
+					<h4>So, what is an Exceptional Client Experience? It's the sincere belief by 
+					a client that we (first) intentionally focus on listening and understanding
+					their needs, and then (second) deliver on those needs with a high degree of 
+					competence and respect.</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<div id="primary-mono" class="content-areas <?php apply_filters('wpre_primary-width','wpre_primary_class') ?> page">
+		<main id="main" class="site-main" role="main">
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( '/modules/content/content', 'page' ); ?>
+
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+
+			<?php endwhile; // end of the loop. ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<?php get_footer(); ?>
