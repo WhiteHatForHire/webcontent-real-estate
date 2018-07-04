@@ -9,3 +9,23 @@
         <?php get_template_part('modules/social/social', 'fa'); ?>
     </div>
 </nav><!-- #site-navigation -->
+
+<div class="hamburger" id="hamburger-7">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+</div>
+
+<div class="mobile-new hidden">
+
+        <h1 class="text-center">Menu</h1>
+
+    <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="/advice-tools"><li>Advice & Tools</li></a>
+        <a href="/blog"><li>Blog</li></a>
+        <a href="/explore"><li>Explore!</li></a>
+        <a href="/our-team"><li>Our Team</li></a>
+        <a href="/the-market"><li>The Market</li></a>
+    </ul>
+</div>

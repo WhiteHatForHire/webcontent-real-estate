@@ -13,5 +13,11 @@ jQuery(document).ready( function() {
 	    }
 	});
 
-	
+
+	jQuery('.hamburger').click(function () {
+		jQuery('.hamburger').toggleClass("is-active");
+		jQuery('.mobile-new').toggleClass("hidden");
+	});
+		
+
 });

@@ -23,6 +23,7 @@ get_header('landing'); ?>
 	<div class="easy-for-you-text">
 		<h1>We make it easy for you!</h1>
 		<h3 class="">After ten years working in real estate at other brokerages, I knew that buyers and sellers wanted a better real estate experience.</h3>
+		<hr>
 	</div>
 </div>
 
@@ -97,24 +98,6 @@ get_header('landing'); ?>
 	</div>
 </section>
 
-	<div id="primary-mono" class="content-areas <?php apply_filters('wpre_primary-width','wpre_primary_class') ?> page">
-		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( '/modules/content/content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 
 <?php get_footer(); ?>

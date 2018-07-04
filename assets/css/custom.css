@@ -2,8 +2,13 @@
 
 Table of contents:
 
-1. Header Styles
-2. 
+1. Utilities
+2. Header Styles
+3. Jumbotron
+4. Easy for you section
+5. Properties-feature-landing
+6. Landing team intro section
+7. Footer
 
 
 
@@ -14,6 +19,10 @@ Table of contents:
 
 .margin-bottom-50 {
     margin-bottom: 50px !important;
+}
+
+.height-100 {
+    height: 100%;
 }
 
 .flex-container-vertical {
@@ -36,7 +45,7 @@ Table of contents:
     background-color: rgb(39,51,63) !important;
 }
 
-.menu {
+#menu-menu-1 {
     margin-left: 20px;
 }
 .heading-phone-banner  {
@@ -56,7 +65,7 @@ Table of contents:
 /*====== easy-for-you-section ========*/
 
 .easy-for-you-section {
-    margin: 60px auto !important;
+    margin: 45px auto !important;
 }
 
 /*====== Properties-feature-landing =======*/
@@ -94,10 +103,159 @@ Table of contents:
     padding: 20px 10px;
 }
 
+
+/*===== FOOTER =====*/
+
+.footer-copyright {
+    margin-top: -6px;
+    color: white;
+    background: rgb(30,45,60);
+    padding: 8px 0;
+    border-top: 1px solid black;
+}
+
+#footer-address {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+#footer-socials {
+    margin-top: 50px;
+    min-height: 40px;
+    font-size: 36px;
+}
+
+/*SOCIAL COLORS*/
+#footer-socials .fa-facebook-official { color: #3b5998; }
+#footer-socials .fa-twitter { color: #1da1f2; }
+#footer-socials .fa-youtube { color: #ff0000; }
+#footer-socials .fa-google-plus-official { color: #db4437; }
+#footer-socials .fa-envelope { color: #128c7e; }
+
+#footer-socials .fa:hover {
+    color: white;
+}
+
+#footer-socials a {
+    float: left;
+    padding: 0px 10px;
+}
+
 /*Media query for phone number at tablet and smaller*/
 
 @media screen and (max-width: 992px) {
+    footer #footer-socials {
+        margin-top: 0px;
+    }
+    footer #footer-address {
+        margin-top: 0px;
+        text-align: center !important;
+    }
+    
+    footer.site-footer #footer-socials a {
+        float: none !important;
+    }
+    
     .heading-phone-banner {
         display: none !important;
     }
+}
+
+
+/*===== MOBILE MENU ======*/
+
+.mobile-new {
+    z-index: 999991;
+    background-color: rgba(245,245,245,0.97) !important;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.mobile-new ul {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+}
+
+.mobile-new h1 {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid black;
+}
+.mobile-new li {
+    text-align: left !important;
+    border-bottom: 3px solid black;
+    font-size: 24px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.mobile-new li:active {
+    transform: translateX(-3px);
+}
+
+
+/*Eliminate main menue after 767*/
+@media screen and (max-width: 992px) {
+    #site-navigation {
+        display: none !important;
+    }
+    .hamburger {
+        visibility: visible !important;
+    }
+}
+
+
+.hamburger {
+    z-index: 999999;
+    visibility: hidden;
+    position: fixed;
+    right: 20px;
+    top: 40px;
+}
+
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+/* SEVEN */
+
+#hamburger-7.is-active .line:nth-child(1){
+  width: 30px;
+}
+
+#hamburger-7.is-active .line:nth-child(2){
+  width: 40px;
+}
+
+#hamburger-7.is-active .line{
+    background-color: black;
+    color: black;
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
