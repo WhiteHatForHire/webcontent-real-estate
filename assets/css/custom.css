@@ -17,8 +17,8 @@ Table of contents:
 
 /*====== UTILITIES =======*/
 
-.margin-bottom-50 {
-    margin-bottom: 50px !important;
+.margin-bottom-sm {
+    margin-bottom: 20px !important;
 }
 
 .height-100 {

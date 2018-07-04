@@ -27,7 +27,7 @@ get_header('landing'); ?>
 	</div>
 </div>
 
-<h1 class="margin-bottom-50 text-center clearfix">Lancaster Properties</h1>
+<h1 class="margin-bottom-sm text-center clearfix">Lancaster Properties</h1>
 
 <!-- featured properties section -->
 <section class="theme-blue-background-solid">
